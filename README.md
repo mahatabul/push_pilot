@@ -1,6 +1,33 @@
-# Push Pilot 🚀
+```bash
 
-Push Pilot is a Python script that automates the creation of a GitHub repository and pushes local project files to the newly created repository. It helps streamline the process of initializing a new GitHub repository and pushing your project to GitHub with minimal effort.
+                    $$$$$$$\                      $$\             $$$$$$$\  $$\ $$\            $$\     
+                    $$  __$$\                     $$ |            $$  __$$\ \__|$$ |           $$ |    
+                    $$ |  $$ |$$\   $$\  $$$$$$$\ $$$$$$$\        $$ |  $$ |$$\ $$ | $$$$$$\ $$$$$$\   
+                    $$$$$$$  |$$ |  $$ |$$  _____|$$  __$$\       $$$$$$$  |$$ |$$ |$$  __$$\\_$$  _|  
+                    $$  ____/ $$ |  $$ |\$$$$$$\  $$ |  $$ |      $$  ____/ $$ |$$ |$$ /  $$ | $$ |    
+                    $$ |      $$ |  $$ | \____$$\ $$ |  $$ |      $$ |      $$ |$$ |$$ |  $$ | $$ |$$\ 
+                    $$ |      \$$$$$$  |$$$$$$$  |$$ |  $$ |      $$ |      $$ |$$ |\$$$$$$  | \$$$$  |
+                    \__|       \______/ \_______/ \__|  \__|      \__|      \__|\__| \______/   \____/ 
+```
+
+# Intro 🚀
+
+Push Pilot is a script that automates the creation of a GitHub repository and pushes local project files to the newly created repository. It helps streamline the process of initializing a new GitHub repository and pushing your project to GitHub with minimal effort.
+
+## Why Push Pilot? 🚀
+
+There were many times when I worked on a project but **forgot to create a repository on GitHub**.  
+My usual process looked something like this:
+
+1. Go to my GitHub profile.
+2. Create a new repository with the project name.
+3. Clone the repo to my PC.
+4. Copy-paste my project files into the cloned repo.
+5. Run `git add`, `git commit`, and `git push`.
+
+All of this felt **repetitive and like a hassle**, especially when done frequently.  
+That’s why I created this script — **Push Pilot** — to automate the entire workflow so that everything can be done **directly from the terminal**.
+
 
 ## Features
 
@@ -66,10 +93,43 @@ push_pilot
 
 4. **Check your new repository on GitHub!** The repository is now available at: `https://github.com/your-username/your-repo-name`.
 
+## Uninstallation
+
+1. Navigate to the cloned repository directory:
+   ```bash
+   cd push_pilot
+   ```
+2. Make the uninstall script executable:
+   ```bash
+   chmod +x uninstall.sh
+   ```
+3. Run the appropriate uninstall command:
+
+    For system-wide installations (used sudo during install):
+    ```bash
+   sudo ./uninstall.sh
+    ```
+
+    For user-local installations:
+    ```bash
+    ./uninstall.sh
+    ```
+Confirm uninstallation when prompted
+
 ## Example
 
 ### Output:
 ```bash
+
+
+$$$$$$$\                      $$\             $$$$$$$\  $$\ $$\            $$\     
+$$  __$$\                     $$ |            $$  __$$\ \__|$$ |           $$ |    
+$$ |  $$ |$$\   $$\  $$$$$$$\ $$$$$$$\        $$ |  $$ |$$\ $$ | $$$$$$\ $$$$$$\   
+$$$$$$$  |$$ |  $$ |$$  _____|$$  __$$\       $$$$$$$  |$$ |$$ |$$  __$$\\_$$  _|  
+$$  ____/ $$ |  $$ |\$$$$$$\  $$ |  $$ |      $$  ____/ $$ |$$ |$$ /  $$ | $$ |    
+$$ |      $$ |  $$ | \____$$\ $$ |  $$ |      $$ |      $$ |$$ |$$ |  $$ | $$ |$$\ 
+$$ |      \$$$$$$  |$$$$$$$  |$$ |  $$ |      $$ |      $$ |$$ |\$$$$$$  | \$$$$  |
+\__|       \______/ \_______/ \__|  \__|      \__|      \__|\__| \______/   \____/ 
 
 
 Enter your GitHub token: ************
