@@ -16,33 +16,62 @@ Push Pilot is a Python script that automates the creation of a GitHub repository
 - Python 3.x
 - `github` library (`pip install github`)
 
-## Usage
+# Installation and Usage
 
-1. **Clone the script or copy it to your local machine.**
+## Installation
 
-2. **Run the script:**
+1. Clone this repository to your PC using terminal:
+
     ```bash
-    python push_pilot.py
+    git clone https://github.com/mahatabul/push_pilot.git
     ```
 
-3. **Follow the prompts:**
+2. Give execution permission to `install.sh`:
+
+    ```bash
+    chmod +x install.sh
+    ```
+
+3. Run the installer:
+   - For system-wide installation (requires sudo):
+
+        ```bash
+        sudo ./install.sh
+        ```
+
+   - For local user installation:
+
+        ```bash
+        ./install.sh
+        ```
+
+## Usage
+
+1. After installation, you can run the script from anywhere by typing:
+
+```bash
+push_pilot
+```
+2. **Follow the prompts:**
     - **GitHub Token**: Enter your GitHub personal access token.
     - **Repository Name**: Enter the desired name for the new GitHub repository.
     - **Privacy Option**: Decide whether to make the repository private (`Y/N`).
     - **Create README**: Option to create a `README.md` file in the repository (`Y/N`).
     - **Project Directory**: Enter the path to the local directory containing the project files. If left empty, the script will use the current directory.
 
-4. **The script will:**
+3. **The script will:**
     - Create a new GitHub repository.
     - Initialize a local Git repository (if not already initialized).
     - Commit and push your project files to GitHub.
 
-5. **Check your new repository on GitHub!** The repository is now available at: `https://github.com/your-username/your-repo-name`.
+4. **Check your new repository on GitHub!** The repository is now available at: `https://github.com/your-username/your-repo-name`.
 
 ## Example
 
 ### Output:
 ```bash
+
+
 Enter your GitHub token: ************
 Enter the name of your repo (no spaces): MyNewRepo
 Make it Private? [Y/N]: N
