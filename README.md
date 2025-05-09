@@ -1,4 +1,4 @@
-# Push Pilot
+# Push Pilot 🚀
 
 Push Pilot is a Python script that automates the creation of a GitHub repository and pushes local project files to the newly created repository. It helps streamline the process of initializing a new GitHub repository and pushing your project to GitHub with minimal effort.
 
